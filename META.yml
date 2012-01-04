@@ -1,0 +1,32 @@
+---
+abstract: 'common tests to check for copyright and license notices'
+author:
+  - 'Alan Young <harleypig@gmail.com>'
+build_requires:
+  Carp: 0
+  English: 0
+  File::Find: 0
+  File::Temp: 0
+  Module::Build: 0.3601
+  Scalar::Util: 0
+  Test::CheckDeps: 0
+  Test::More: 0.94
+  Test::Requires: 0
+  Test::UseAllModules: 0
+  perl: 5.006
+configure_requires:
+  Module::Build: 0.3601
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.300006, CPAN::Meta::Converter version 2.113640'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Dist-Zilla-Plugin-Test-Legal
+requires:
+  Dist::Zilla::Plugin::InlineFiles: 0
+  Moose: 0
+  strict: 0
+  warnings: 0
+resources: {}
+version: 0.01
