@@ -1,4 +1,4 @@
-#!perl
+#!perl -T
 
 BEGIN {
   unless ($ENV{RELEASE_TESTING}) {
@@ -7,10 +7,10 @@ BEGIN {
   }
 }
 
-
 use Test::More;
 
-eval "use Test::CheckChanges";
-plan skip_all => "Test::CheckChanges required for testing changes"
+eval "use Test::CheckManifest 1.24";
+plan skip_all => "Test::CheckManifest 1.24 required for testing MANIFEST"
   if $@;
-ok_changes();
+
+ok_manifest();
